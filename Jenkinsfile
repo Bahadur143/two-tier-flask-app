@@ -1,3 +1,4 @@
+@Library("Shared") _
 pipeline{
     agent any;
     Stages{
@@ -32,4 +33,5 @@ pipeline{
         }
     }
 
+}
 }
