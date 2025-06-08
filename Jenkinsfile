@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -25,7 +24,7 @@ pipeline {
             steps {
                 withCredentials([
                     usernamePassword(
-                        credentialsId: "dockerHubCreds",
+                        credentialsId: "dockerHubCred",
                         usernameVariable: "dockerHubUser",
                         passwordVariable: "dockerHubPass"
                     )
