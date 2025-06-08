@@ -1,7 +1,7 @@
 @Library("Shared") _
 pipeline{
     agent any;
-    Stages{
+    stages{
     stage("code"){
         steps{
             git url: "https://github.com/Bahadur143/two-tier-flask-app-demo.git", branch:"dev"
